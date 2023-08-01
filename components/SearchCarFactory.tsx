@@ -18,7 +18,7 @@ function SearchCarFactory({ factory, setFactory}: SearchCarFactoryProps) {
 
     return (
     <div className='search-manufacture'>
-        <Combobox>
+        <Combobox value={factory} onChange={setFactory}>
             <div className='relative w-full'>
                 <Combobox.Button className='absolute top-[14px]'>
                     <Image 
